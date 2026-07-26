@@ -7,6 +7,14 @@
     {
       "source": "/support",
       "destination": "/support.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/account-deletion",
+      "destination": "/account-deletion.html"
     }
   ]
 }
