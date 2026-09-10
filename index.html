@@ -3,211 +3,282 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sunset Chaser | Sunset times, forecasts, and community photos</title>
+    <meta name="theme-color" content="#f6ecd8" />
+    <meta name="apple-itunes-app" content="app-id=6794942520" />
+    <title>Sunset Chaser | Sunset &amp; activity forecasts</title>
     <meta
       name="description"
-      content="Sunset Chaser is a mobile app for tracking sunset times, weather quality, reminders, and sharing sunset photos with the community."
+      content="Plan the last light with sunset scores, golden-hour timing, marine activity forecasts, reminders, saved places, and a sunset community."
     />
-    <meta property="og:title" content="Sunset Chaser" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sunsetchaser.app/" />
+    <meta property="og:title" content="Sunset Chaser — follow the last light" />
     <meta
       property="og:description"
-      content="Track sunsets, check forecasts, set reminders, and share golden-hour photos with the Sunset Chaser community."
+      content="Sunset forecasts, marine activity windows, reminders, saved places, and community photos in one field guide."
     />
+    <meta property="og:image" content="https://www.sunsetchaser.app/assets/forecast.png" />
+    <link rel="canonical" href="https://www.sunsetchaser.app/" />
+    <link rel="icon" href="/assets/app-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Sunset Chaser: Golden Hour",
+        "applicationCategory": "WeatherApplication",
+        "operatingSystem": "iOS",
+        "url": "https://www.sunsetchaser.app/",
+        "downloadUrl": "https://apps.apple.com/app/id6794942520",
+        "description": "Sunset forecasts, marine activity windows, reminders, saved places, and community photos."
+      }
+    </script>
   </head>
+
   <body class="page page-home">
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <div class="container">
-        <a class="brand" href="/">Sunset Chaser</a>
-        <nav class="nav">
-          <a href="#features">Features</a>
-          <a href="#how">How it works</a>
-          <a href="#data">Data & privacy</a>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Sunset Chaser home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Sunset Chaser</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#forecast">Forecast</a>
+          <a href="#activities">Activities</a>
+          <a href="#community">Community</a>
           <a href="/support">Support</a>
-          <a href="/privacy">Privacy</a>
         </nav>
+        <a class="header-download" href="https://apps.apple.com/app/id6794942520" target="_blank" rel="noopener">
+          Download
+        </a>
       </div>
     </header>
 
     <main id="main">
-      <section class="container hero reveal">
-        <div>
-          <span class="badge">Official app homepage</span>
-          <h1 class="hero-title">Never miss a perfect sunset.</h1>
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>Now on the App Store</span> · English &amp; Türkçe</p>
+          <h1>Know when the sky is worth chasing.</h1>
           <p class="hero-lead">
-            Sunset Chaser is a mobile app that delivers accurate sunset times, weather quality
-            scores, smart reminders, and a community feed so you can plan golden-hour moments
-            anywhere.
+            Sunset Chaser brings the last light, local weather, marine conditions, and your best
+            activity windows into one clear field guide.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="/support">Contact Support</a>
-            <a class="button" href="/privacy">Privacy Policy</a>
+
+          <div class="download-row">
+            <a
+              class="app-store-button"
+              href="https://apps.apple.com/app/id6794942520"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Sunset Chaser on the App Store"
+            >
+              <svg viewBox="0 0 384 512" aria-hidden="true">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-51.9-19.7-80.4-19.7-43.2 0-88.5 28.6-88.5 94 0 57 20 132.3 84.4 132.3 25.6 0 39.7-22.3 59.9-22.3 21.3 0 34.6 22.3 56 22.3 27.6 0 54.9-27 75.6-57.8 19.9-26.6 24.5-40.4 25.2-42.2-61.9-23.8-68-96.2-9-138.3zm-77-160c18.5-23.3 27.6-52 23.3-81.5-27 1.8-54.8 14.4-71.1 33.7-16 18.6-32.1 48.9-28.2 78.4 30.5 4.3 56.5-11.4 75.9-30.6z" />
+              </svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+
+            <a
+              class="hero-qr"
+              href="https://apps.apple.com/app/id6794942520"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Sunset Chaser in the App Store"
+            >
+              <img src="/assets/app-store-qr.svg" alt="QR code for the Sunset Chaser App Store page" />
+              <span><strong>Scan to download</strong><small>iPhone &amp; iPad</small></span>
+            </a>
           </div>
-        </div>
-        <div class="hero-card">
-          <h3>App at a glance</h3>
-          <ul>
-            <li>Track sunset times and weather for any saved location.</li>
-            <li>Get notified before sunset with forecast-based reminders.</li>
-            <li>Share sunset photos and discover community spots.</li>
-            <li>Sign in with email, Google, or Apple via Supabase Auth.</li>
+
+          <ul class="hero-notes">
+            <li>Sunset score</li>
+            <li>Golden hour</li>
+            <li>Smart alerts</li>
           </ul>
         </div>
+
+        <div class="hero-art reveal delay-1">
+          <div class="sun-orbit" aria-hidden="true"><span></span></div>
+          <div class="screenshot-frame hero-screen">
+            <img
+              src="/assets/forecast.png"
+              alt="Sunset Chaser forecast showing sunset time, quality score, golden hour, and weather"
+              width="508"
+              height="1100"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="field-stamp stamp-score" aria-hidden="true">
+            <small>Sunset score</small>
+            <strong>83</strong><span>/100</span>
+          </div>
+          <div class="field-stamp stamp-window" aria-hidden="true">
+            <small>Golden hour</small>
+            <strong>18:02</strong>
+          </div>
+        </div>
       </section>
 
-      <section id="features" class="section">
-        <div class="container">
-          <h2 class="section-title">Built for sunset hunters</h2>
-          <p class="section-lead">
-            Plan, track, and share sunsets with tools that stay simple and transparent.
+      <section class="proof-band" aria-label="Sunset Chaser capabilities">
+        <div class="container proof-grid">
+          <div><strong>5</strong><span>marine activities</span></div>
+          <div><strong>Hourly</strong><span>condition windows</span></div>
+          <div><strong>2</strong><span>languages</span></div>
+          <div><strong>1 tap</strong><span>sunset reminders</span></div>
+        </div>
+      </section>
+
+      <section id="forecast" class="section editorial-section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · Read the light</p>
+          <h2>A forecast built around the moment you care about.</h2>
+          <p>
+            See sunset time, a live countdown, golden hour, quality score, cloud cover, rain,
+            humidity, wind, and gusts for your current or saved locations.
           </p>
-          <div class="grid features reveal delay-1">
-            <div class="card">
-              <h4>Sunset tracking</h4>
-              <p>Accurate sunset times, location labels, and golden-hour insights.</p>
-            </div>
-            <div class="card">
-              <h4>Weather integration</h4>
-              <p>Quality scoring and live forecasts powered by OpenWeather.</p>
-            </div>
-            <div class="card">
-              <h4>Saved locations</h4>
-              <p>Pin favorite spots and manage your best viewing locations.</p>
-            </div>
-            <div class="card">
-              <h4>Smart reminders</h4>
-              <p>Schedule notifications so you never miss the sky.</p>
-            </div>
-            <div class="card">
-              <h4>Community feed</h4>
-              <p>Upload sunset photos and discover new places from others.</p>
-            </div>
-            <div class="card">
-              <h4>Personal profiles</h4>
-              <p>Customize your name and avatar to share with the community.</p>
-            </div>
-          </div>
+        </div>
+
+        <div class="feature-ledger reveal delay-1">
+          <article>
+            <span class="ledger-number">01</span>
+            <div><h3>Sunset quality score</h3><p>A quick read of the evening forecast before you head out.</p></div>
+          </article>
+          <article>
+            <span class="ledger-number">02</span>
+            <div><h3>Saved places</h3><p>Keep favorite coastlines, parks, and viewpoints close at hand.</p></div>
+          </article>
+          <article>
+            <span class="ledger-number">03</span>
+            <div><h3>Last-light reminders</h3><p>Choose a place and get an optional alert before sunset.</p></div>
+          </article>
         </div>
       </section>
 
-      <section id="how" class="section">
-        <div class="container split">
-          <div class="reveal delay-2">
-            <h2 class="section-title">How it works</h2>
-            <p class="section-lead">
-              Add a location, see the forecast, set reminders, and share your sunset moments.
+      <section id="activities" class="section activity-section">
+        <div class="container activity-layout">
+          <div class="activity-visual reveal">
+            <div class="screenshot-frame tilted-screen">
+              <img
+                src="/assets/activities.png"
+              alt="Sunset Chaser activity selector for paddleboarding, kayaking, windsurfing, surfing, and sailing"
+              width="508"
+              height="1100"
+            />
+            </div>
+          </div>
+
+          <div class="activity-copy reveal delay-1">
+            <p class="eyebrow light">02 · New activity forecasts</p>
+            <h2>Find the better window on the water.</h2>
+            <p>
+              Compare hourly wind, gust, wave, swell, period, and surface-current context. Each
+              activity uses its own weather profile, so calm is not automatically “great” for
+              every sport.
             </p>
-            <ul class="list">
-              <li>Search for a location or use your current location (optional permission).</li>
-              <li>Check the sunset time, weather quality, and cloud cover.</li>
-              <li>Set a reminder so the app notifies you before sunset.</li>
-              <li>Upload a photo and tag the location to share with the community.</li>
+            <ul class="activity-list" aria-label="Supported activities">
+              <li>Stand-up paddle</li>
+              <li>Kayaking</li>
+              <li>Windsurfing</li>
+              <li>Surfing</li>
+              <li>Sailing</li>
             </ul>
-          </div>
-          <div class="callout reveal delay-3">
-            Sunset Chaser is designed to be transparent about data use. Review the Privacy Policy
-            below for full details on what is collected and why.
+            <div class="safety-note">
+              <strong>Plan, then verify.</strong>
+              Activity scores are guidance—not a safety guarantee. Always check official warnings
+              and conditions at the location.
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="data" class="section">
-        <div class="container split">
-          <div class="reveal delay-2">
-            <h2 class="section-title">Data & privacy at a glance</h2>
-            <p class="section-lead">
-              We collect only what is needed to deliver the core features of the app.
-            </p>
-            <ul class="list">
-              <li><strong>Email + account ID:</strong> to create and secure your account.</li>
-              <li>
-                <strong>Location data:</strong> to provide local sunset times, forecasts, and
-                reminders (optional and user-controlled).
-              </li>
-              <li>
-                <strong>Community photos:</strong> to share your sunset posts with other users.
-              </li>
-              <li>
-                <strong>Profile details:</strong> display name and avatar for community profiles.
-              </li>
-              <li>
-                <strong>Notification token:</strong> to deliver sunset reminder alerts.
-              </li>
-            </ul>
-          </div>
-          <div class="hero-card reveal delay-3">
-            <h3>Transparency promise</h3>
-            <ul>
-              <li>We do not sell your personal data.</li>
-              <li>You can manage permissions in your device settings.</li>
-              <li>You can delete your account and content at any time.</li>
-              <li>Community posts are public to other users of the app.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">Third-party services</h2>
-          <p class="section-lead">
-            We use trusted providers to run authentication, weather, storage, and notifications.
+      <section id="community" class="section community-section container">
+        <div class="community-copy reveal">
+          <p class="eyebrow">03 · Share the last light</p>
+          <h2>Your sunset story lives beyond the forecast.</h2>
+          <p>
+            Post photos and field notes, browse sunsets from other chasers, filter by location,
+            explore the map, and keep your own shared-photo history in one place.
           </p>
-          <div class="grid features reveal delay-1">
-            <div class="card">
-              <h4>Supabase</h4>
-              <p>Authentication, database, and storage for profiles and photos.</p>
-            </div>
-            <div class="card">
-              <h4>OpenWeather</h4>
-              <p>Weather data used to calculate sunset quality.</p>
-            </div>
-            <div class="card">
-              <h4>Google & Apple Sign-In</h4>
-              <p>Optional OAuth providers for quick sign-in.</p>
-            </div>
-            <div class="card">
-              <h4>Expo Notifications</h4>
-              <p>Delivers reminder alerts when you schedule them.</p>
-            </div>
+          <ul class="check-list">
+            <li>Community photo feed</li>
+            <li>Location search and map view</li>
+            <li>Personal profile and post history</li>
+            <li>Email, Google, and Apple sign-in</li>
+          </ul>
+        </div>
+
+        <div class="community-visual reveal delay-1">
+          <div class="postcard-note" aria-hidden="true">Beach notes · from the community</div>
+          <div class="screenshot-frame community-screen">
+            <img
+              src="/assets/community.png"
+              alt="Sunset Chaser community feed with a location-tagged sunset photo"
+              width="508"
+              height="1100"
+            />
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container split">
-          <div class="reveal delay-2">
-            <h2 class="section-title">Support & contact</h2>
-            <p class="section-lead">
-              Need help or have a request? We respond quickly at support@sunsetchaser.app.
-            </p>
+      <section id="download" class="section download-section">
+        <div class="container download-card reveal">
+          <div class="download-copy">
+            <img src="/assets/app-icon.png" alt="Sunset Chaser app icon" width="180" height="180" />
+            <div>
+              <p class="eyebrow light">The sky changes quickly</p>
+              <h2>Take the field guide with you.</h2>
+              <p>Download Sunset Chaser: Golden Hour from the App Store.</p>
+              <a
+                class="app-store-button inverse"
+                href="https://apps.apple.com/app/id6794942520"
+                target="_blank"
+                rel="noopener"
+                aria-label="Download Sunset Chaser on the App Store"
+              >
+                <svg viewBox="0 0 384 512" aria-hidden="true">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-51.9-19.7-80.4-19.7-43.2 0-88.5 28.6-88.5 94 0 57 20 132.3 84.4 132.3 25.6 0 39.7-22.3 59.9-22.3 21.3 0 34.6 22.3 56 22.3 27.6 0 54.9-27 75.6-57.8 19.9-26.6 24.5-40.4 25.2-42.2-61.9-23.8-68-96.2-9-138.3zm-77-160c18.5-23.3 27.6-52 23.3-81.5-27 1.8-54.8 14.4-71.1 33.7-16 18.6-32.1 48.9-28.2 78.4 30.5 4.3 56.5-11.4 75.9-30.6z" />
+                </svg>
+                <span><small>Download on the</small><strong>App Store</strong></span>
+              </a>
+            </div>
           </div>
-          <div class="hero-card reveal delay-3">
-            <h3>Quick links</h3>
-            <ul>
-              <li><a href="/privacy">Read the Privacy Policy</a></li>
-              <li><a href="/support">Visit the Support page</a></li>
-            </ul>
-          </div>
+
+          <a
+            class="download-qr"
+            href="https://apps.apple.com/app/id6794942520"
+            target="_blank"
+            rel="noopener"
+            aria-label="Scan or open the Sunset Chaser App Store page"
+          >
+            <img src="/assets/app-store-qr.svg" alt="QR code linking directly to Sunset Chaser on the App Store" />
+            <span>Point your phone camera here</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-links">
-          <a href="/">Home</a>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/support">Support</a>
+      <div class="container footer-inner">
+        <div>
+          <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span> Sunset Chaser</a>
+          <p>Follow the last light.</p>
         </div>
-        <div>© 2025 Sunset Chaser. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="https://apps.apple.com/app/id6794942520" target="_blank" rel="noopener">App Store</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/support">Support</a>
+          <a href="/account-deletion">Delete account</a>
+        </div>
+        <div class="copyright">© 2026 Sunset Chaser</div>
       </div>
     </footer>
   </body>
